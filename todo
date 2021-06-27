@@ -1,0 +1,6 @@
+configuration methods for switch
+configuration events for switch
+whitemode methods for light
+toggleafter light
+automatic key fetching
+fixing `declare module` tuyapi types
