@@ -17,9 +17,9 @@ declare module 'tuyapi' {
 
   export default class Device {
     constructor(opts: {
-      id: string,
-      key: string,
-      version?: '3.3',
+      id: string;
+      key: string;
+      version?: '3.3';
       ip?: string;
     });
 
@@ -30,7 +30,7 @@ declare module 'tuyapi' {
     public connect(): Promise<void>;
 
     public get(opts: {
-      schema: boolean
+      schema: boolean;
     }): Promise<DataPointsPayload>;
 
     public set(opts: {

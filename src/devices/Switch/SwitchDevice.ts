@@ -17,7 +17,7 @@ export class SwitchDevice extends Device<SwitchDeviceEvent> {
 
   protected parseDataPoints(data: DataPointsPayload) {
     const change: SwitchDeviceEvent = {
-      switchChanges: []
+      switchChanges: [],
     };
 
     for (const keyString of Object.keys(data.dps)) {
@@ -26,7 +26,7 @@ export class SwitchDevice extends Device<SwitchDeviceEvent> {
         change.switchChanges.push({
           id: key,
           state: data.dps[key] as boolean,
-        })
+        });
       }
     }
 

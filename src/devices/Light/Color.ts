@@ -21,7 +21,7 @@ export class Color {
     return colorConvert.hsv(this.hsv);
   }
 
-  static fromRGB(input: `#${string}` | [r: number, g: number, b: number] | number) {
+  public static fromRGB(input: `#${string}` | Color['hsv'] | number) {
     if (typeof input === 'number') {
       input = `#${input.toString(16).padStart(6, '0')}`;
     }
