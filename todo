@@ -1,6 +1,7 @@
 configuration methods for switch
 configuration events for switch
 whitemode methods for light
+fix light scaling
 toggleafter light
 automatic key fetching
 fixing `declare module` tuyapi types
